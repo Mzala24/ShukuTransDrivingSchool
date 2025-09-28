@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shuku Driving School</title>
+  <link rel="stylesheet" href="shuku.css">
+</head>
+
+<body>
+
+  <header>
+    <div>
+    <h1>Shuku Driving School</h1>
+    <p>Always Reach Your Destination</p>
+    </div>
+    <nav>
+      <a href="#courses">Courses</a>
+      <a href="#instructors">Instructors</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#specials">Specials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h2>Learn to drive with confidence</h2>
+      <p>Modern curriculum, friendly instructors, flexible scheduling and well-maintained vehicles. We help learners
+        pass tests and become safe drivers for life.</p>
+      <a href="https://wa.me/0818308194" class="btn">Book Now</a>
+      <a href="#courses" class="btn">View courses →</a>
+    </div>
+    <div>
+      <img src="logo.jpeg" alt="driving lesson" class="responsive">
+    </div>
+  </section>
+
+  <section id="courses" class="section">
+    <h3>Courses</h3>
+    <div class="grid courses">
+      <div class="card">
+        <h4>Beginner Course</h4>
+        <p>From basics to road confidence. Includes classroom & practical sessions.</p>
+      </div>
+      <div class="card">
+        <h4>Refresher</h4>
+        <p>Quick refresh for licensed drivers who want to improve skills.</p>
+      </div>
+      <div class="card">
+        <h4>Defensive Driving</h4>
+        <p>Advanced techniques for hazard management and risk reduction.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="instructors" class="section">
+    <h3>Our Instructors</h3>
+    <div class="grid instructors">
+      <div class="card">
+        <h4>Naledi</h4>
+        <p>8 years experience. Patient instructor specializing in nervous learners.</p>
+      </div>
+      <div class="card">
+        <h4>Sipho</h4>
+        <p>5 years experience. Calm and technically-focused — great for exam preparation.</p>
+      </div>
+      <div class="card">
+        <h4>Aisha</h4>
+        <p>6 years experience. Defensive driving expert and advanced-skills trainer.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="section">
+    <h3>Pricing</h3>
+    <div class="grid pricing">
+      <div class="card">
+        <h4>Code 08 Full Package:</h4>
+        <p><strong>R2,200</strong></p>
+        <ul>
+          <li>25 lesson</li>
+          <li>Learners + Driving lesson</li>
+          <li>Booking</li>
+          <li>Free mock test</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Code 10 Full Package:</h4>
+        <p><strong>R2,500</strong></p>
+        <ul>
+          <li>25 lesson</li>
+          <li>Learners + Driving lesson</li>
+          <li>Booking + Truck hiring</li>
+          <li>Free mock test</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h4>Code 14 Full Package:</h4>
+        <p><strong>R4,400</strong></p>
+        <ul>
+          <li>25 lesson</li>
+          <li>Learners + Driving lesson</li>
+          <li>Booking + Truck hiring</li>
+          <li>Free mock test</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="specials" class="section">
+    <h3>Specials</h3>
+    <div class="grid pricing">
+    <div class="card">
+      <h4>December Special</h4>
+      <p><strong>Refer a friend and get 50% discount on:</strong></p>
+        <ul>
+          <li>Learners</li>
+          <li>booking</li>
+          <li>Vehicle hiring</li>
+        </ul>
+    </div>
+    <div id="specials" class="card">
+      <h1>More Special to Come</h1>
+    </div>
+    </div>
+  </section>
+
+  <section id="Feedback" class="section">
+    <h3>Client Feedback</h3>
+    <form id="feedbackForm">
+      <input type="text" name="FullName" id="FullName" placeholder="Your Name:" required>
+      <input type="email" name="email" id="email" placeholder="Email:" required>
+      <textarea name="message" id="message" placeholder="Write yout feedback here..." required></textarea>
+      <button type="submit"> Submit Feedback</button>
+    </form>
+  </section>
+
+  <section id="contact" class="section">
+    <h3>Contact & Location</h3>
+    <p>Find us at 123 Main Road, Yourtown. Open Mon–Sat 8:00–18:00.</p>
+    <br>
+    <a href="tel:+27818308194">Phone</a>
+    <a href="mailto:thabaniabel35@gmail.com">Email</a>
+    <a href="https://wa.me/0818308194">WhatsApp</a>
+    <a href="facebook">facebook</a>
+  </section>
+  <footer>
+    ©
+    <script>document.write(new Date().getFullYear())</script> Shuku Driving School — All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("feedbackForm").addEventListener("submit",
+      function(e){
+        e.preventDefault();
+        alert("Thank you for your feedback!");
+        this.reset();
+    });
+  </script>
+</body>
+
+</html>
